@@ -1,0 +1,10 @@
+# Ignore artifacts:
+build
+node_modules
+coverage
+
+# Ignore all HTML files:
+*.html
+
+# Ignore test
+# **/HelloWorld.vue
