@@ -6,4 +6,6 @@
 
 - [localStorage、sessionStorage 和 cookie](./js-part/localStorage-sessionStorage.md)
 
+- [属性的 getter 和 setter](./js-part/getter-setter.md)
+
 ### 其他
