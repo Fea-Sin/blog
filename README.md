@@ -12,4 +12,6 @@
 
 - [require.context 详解](./js-part/require-context.md)
 
+- [JS 装饰器](./js-part/decorators.md)
+
 ### 其他
