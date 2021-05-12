@@ -248,3 +248,40 @@ const checkRecommanFunc = (code) => (target, property, descriptor) => {
   return descriptor;
 };
 ```
+
+### 加 loading
+
+我们可能需要向后台请求数据时，页面出现 loading，这个时候，可以使用装饰器优雅实现
+
+```
+@autobind
+@loadingWrap()
+async handleSelect(params) {
+  await this.props.dispatch({
+    type: 'product_list/setQueryParams',
+    queryParams: params
+  })
+}
+```
+
+```jsx
+// loadingWrap 函数
+export default loadingWrap() {
+  const defaultLoading = (
+    <div>加载中...</div>
+  )
+
+    return function(target, property, descriptor) {
+    const raw = descriptor.value
+    descriptor.value = function(...args) {
+      Toast.info(defaultLoading)
+      const res = raw.apply(this, args)
+      res.finally(() => {
+        Toast.hide()
+      })
+    }
+
+    return descriptor
+  }
+}
+```
