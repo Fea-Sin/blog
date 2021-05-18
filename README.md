@@ -28,6 +28,10 @@
 
 - [CLI](./webpack/cli.md)
 
+- [watch](./webpack/watch.md)
+
+- [devServer](./webpack/devServer.md)
+
 ### ESLint
 
 - [spaced-comment](./ESLint/space-comment.md)
