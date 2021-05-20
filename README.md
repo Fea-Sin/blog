@@ -32,6 +32,8 @@
 
 - [devServer](./webpack/devServer.md)
 
+- [解析 resolve](./webpack/resolve.md)
+
 ### ESLint
 
 - [spaced-comment](./ESLint/space-comment.md)
