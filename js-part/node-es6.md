@@ -8,7 +8,7 @@ benefit of compiling with Babel presets and plugins before running it
 安装
 
 ```
-npm install --save-dev @babel/core @babel/node
+npm install --save-dev @babel/core @baebel/preset-env @babel/node
 ```
 
 使用
