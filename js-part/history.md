@@ -49,7 +49,7 @@ HTML5 引入了`history.pushState()`和`history.replaceState()`方法，它们�
 
 ### 动机
 
-history API 最重要的是它不会刷新页面，就像改变 hash 一样（例如: <a href="#target">link</a>）
+history API 最重要的是它不会刷新页面，就像改变 hash 一样（例如: `<a href="#target">link</a>`）
 
 `window.location`总是会刷新页面
 
@@ -84,3 +84,7 @@ history.go(2); //   location: http://example.com/example.html?page=3, state: {"p
 > 注意
 >
 > 第三个参数 url 必须是同源的，否则会抛出错误
+
+```
+history.pushState(null, null, 'https://twitter.com/hello');
+```
