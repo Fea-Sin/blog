@@ -18,6 +18,8 @@
 
 - [@babel/plugin-transform-runtime 到底是什么](./js-part/babel-runtime.md)
 
+- [History API](./js-part/history.md)
+
 <!-- - [箭头函数]() -->
 
 <!-- - [generator]() -->
