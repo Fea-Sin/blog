@@ -52,7 +52,11 @@
 
 - [process.env.NODE_ENV](./webpack/node-env.md)
 
-<!-- - [HtmlWebpackPlugin]() -->
+- [file-loader](./webpack/fileLoader.md)
+
+### webpack plugin
+
+- [MiniCssExtractPlugin](./webpack/plugin/MiniCssExtractPlugin.md)
 
 ### Vue Loader
 
@@ -63,5 +67,3 @@
 - [spaced-comment](./ESLint/space-comment.md)
 
 - [prefer-const](./ESLint/prefer-const.md)
-
-<!-- ### 其他 -->
