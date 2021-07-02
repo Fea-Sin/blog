@@ -20,6 +20,8 @@
 
 - [History API](./js-part/history.md)
 
+- [RegExp](./regExp/common.md)
+
 <!-- - [generator]() -->
 
 <!-- - [@babel/plugin-transform-runtime 详解]() -->
