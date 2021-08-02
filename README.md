@@ -22,7 +22,7 @@
 
 - [RegExp](./regExp/common.md)
 
-- [前端进阶之任务队列、事件循环、宏任务、微任务](./js-part/task.md)
+- [任务队列、事件循环、宏任务、微任务](./js-part/task.md)
 
 ### CSS
 
