@@ -38,6 +38,10 @@
 
 - [一文读懂 Peer Dependencies](./node/peerDependencies.md)
 
+### Vue
+
+- [Vue 递归组件](./Vue/recursive.md)
+
 ### webpack v4
 
 - [概念](./webpack/concept.md)
