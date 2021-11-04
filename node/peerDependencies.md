@@ -53,7 +53,7 @@ Peer Dependencies 使用非常简单，需要确定 peer-denpend 流行库的版
 
 最好的方式是遵循 `semver`，如果你的插件工作于`1.x`，使用`"1.x"`
 
-如果你的插件依赖 `1.5.2`，可以使用`">= 1.52 < 2"`
+如果你的插件依赖 `1.5.2`，可以使用`">=1.52 <2"`
 
 ```json
 "peerDependencies": {
@@ -65,6 +65,6 @@ or
 
 ```json
 "peerDependencies": {
-  "chai": ">= 1.5.2 <2"
+  "chai": ">=1.5.2 <2"
 }
 ```
