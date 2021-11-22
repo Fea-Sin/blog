@@ -38,6 +38,8 @@
 
 - [一文读懂 Peer Dependencies](./node/peerDependencies.md)
 
+- [Node.js(New) Package.json Exports Field](./node/exports-field.md)
+
 ## Vue
 
 - [Vue 递归组件](./Vue/recursive.md)
