@@ -70,6 +70,8 @@
 
 - [file-loader](./webpack/fileLoader.md)
 
+- [tree-shaking]()
+
 ## webpack plugin
 
 - [MiniCssExtractPlugin](./webpack/plugin/MiniCssExtractPlugin.md)
