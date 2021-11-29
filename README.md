@@ -97,3 +97,5 @@
 - [一文搞懂 TS 泛型](./TS/generics.md)
 
 - [TypeScript 中的`??`, `?:`, `?.`, `!.`](./TS/operate.md)
+
+- [TypeScript is 关键字](./TS/key-is.md)
