@@ -109,3 +109,59 @@ value[0][1]; // Error
 首先执行某种类型检查以缩小我们正在使用的值的类型范围
 
 ## 缩小`unknown`类型范围
+
+我们可以通过不同的方式将`unknown`类型缩小为更具体的类型范围，包括`typeof`运算符，`instanceof`
+运算符和自定义类型保护函数。
+
+以下示例说明了`value`如何在两个`if`语句分支中获得更具体的类型
+
+```typescript
+function stringifForLogging(value: unknown): string {
+  if (typeof value === "function") {
+    const functionName = value.name || "anonymous";
+    return `[function ${functionName}]`;
+  }
+
+  if (value instanceof Date) {
+    return value.toISOString();
+  }
+}
+```
+
+除了使用`typeof`或`instanceof`运算之外，我们还可以使用`自定义类型保护函数`缩小
+`unknown`类型范围
+
+```typescript
+function isNumberArray(value: unknown): value is number[] {
+  return (
+    Array.isArray(value) &&
+    value.every((element) => typeof element === "number")
+  );
+}
+
+if (isNumberArray(value)) {
+  // `value` has type `number[]`
+  const max = Math.max(...value);
+}
+```
+
+## 对`unknown`类型使用类型断言
+
+上面我们已经看到如何使用`typeof`, `instanceof`和自定义类型保护函数来说服 TypeScript
+编译器某个值具有某种类型。这是`unknown`类型指定为更具体类型的安全推荐的方法
+
+如果要强制编译器信任类型为`unknown`的值为给定类型，可以使用`类型断言`
+
+```typescript
+const value: unknown = "hello world";
+const someString: string = value as string;
+```
+
+类型检查器假定你更了解并相信你在类型断言中使用的任何类型都是正确的，如果你犯了错误
+指定了错误的类型，运行时可能会抛出错误
+
+```typescript
+const value: unknown = 42;
+const someString: string = value as string;
+const other = someString.toUpperCase(); // Error
+```
