@@ -40,6 +40,8 @@
 
 - [Node.js(New) Package.json Exports Field](./node/exports-field.md)
 
+- [发布携带 TypeScript definitions 的 npm package](./node/types-package.md)
+
 ## Vue
 
 - [Vue 递归组件](./Vue/recursive.md)
