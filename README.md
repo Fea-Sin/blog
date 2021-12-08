@@ -109,3 +109,7 @@
 - [Utility Types](./TS/utility-types.md)
 
 - [extends in TypeScript](./TS/extends.md)
+
+- [`typeof` type operator](./TS/typeof.md)
+
+- [`keyof` type operator](./TS/keyof.md)
