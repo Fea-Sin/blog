@@ -108,3 +108,21 @@ type T6 = ReturnType<never>; // type T6 = never
 
 type T7 = ReturnType<string>; // Error; type T7 = any
 ```
+
+## `Extract<Type, Union>`
+
+版本: `2.8`
+
+相对于 `Union` 从 `Type` 提取交集 types
+
+```typescript
+type T0 = Extract<"a" | "b" | "c", "a" | "f">;
+
+// type T0 = "a"
+```
+
+```typescript
+type T1 = Extract<string | number | (() => void), Function>;
+
+// type T1 = () => void
+```

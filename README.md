@@ -113,3 +113,5 @@
 - [`typeof` type operator](./TS/typeof.md)
 
 - [`keyof` type operator](./TS/keyof.md)
+
+- [TypeScript `in`](./TS/in.md)

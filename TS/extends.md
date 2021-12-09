@@ -4,7 +4,7 @@ TypeScript 的属性继承有两种方式
 
 - `extends` 只能用于`interface`和`class`
 
-- `Intersection Types` 类型交集
+- `Intersection Types` 类型合集
 
 ## extends
 
@@ -45,7 +45,7 @@ const mycc: ColorfulCircle = {
 };
 ```
 
-## Intersection Types (交集类型)
+## Intersection Types (合集类型)
 
 `interface`允许我们通过`extends`其他的类型创建一个新的类型。
 TypeScript 提供了另一种结构，结合当前存在的`object types`，这就是 `Intersection Types`
