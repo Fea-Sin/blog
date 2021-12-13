@@ -126,3 +126,26 @@ type T1 = Extract<string | number | (() => void), Function>;
 
 // type T1 = () => void
 ```
+
+## `Pick<Type, Keys>`
+
+版本: `2.1`
+
+从`Type`挑选属性集合`Keys（string literal or union or string literals）`
+
+示例
+
+```typescript
+interface Todo {
+  title: string;
+  description: string;
+  completed: boolean;
+}
+
+type TodoPreview = Pick<Todo, "title" | "completed">;
+
+const todo: TodoPreview = {
+  title: "clean room",
+  completed: false,
+};
+```
