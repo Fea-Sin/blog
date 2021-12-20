@@ -24,6 +24,8 @@
 
 - [任务队列、事件循环、宏任务、微任务](./js-part/task.md)
 
+- [import.meta](./js-part/import-meta.md)
+
 ## CSS
 
 - [web fonts 一篇就够了](./css/webFonts.md)
