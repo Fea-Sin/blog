@@ -32,4 +32,5 @@ new URL("data.txt", import.meta.url);
 
 // my-module.js 内部执行下面的代码
 import.meta.scriptElement.dataset.foo;
+// "abc"
 ```
