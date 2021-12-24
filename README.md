@@ -44,6 +44,8 @@
 
 - [发布携带 TypeScript definitions 的 npm package](./node/types-package.md)
 
+- [Node.js Package.json type Field](./node/type-field.md)
+
 ## Vue
 
 - [Vue 递归组件](./Vue/recursive.md)
