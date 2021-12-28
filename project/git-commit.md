@@ -94,6 +94,13 @@ module.exports = {
 npm install --save-dev husky
 ```
 
+Edit `package.json > prepare`script and run it once
+
+```bash
+npm set-script prepare "husky install"
+npm run prepare
+```
+
 增加`hook`命令
 
 ```
