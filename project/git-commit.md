@@ -79,6 +79,8 @@ pnpm add --save-dev @commitlint/cli @commitlint/config-conventional -w
 
 ### 校验配置
 
+新增`commitlint.config.js`
+
 ```js
 module.exports = {
   extends: ["@commitlint/config-conventional"],
