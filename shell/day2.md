@@ -109,3 +109,30 @@ echo "两数之和： ${val}"
 - `-s file` 检测文件是否为空（文件大小是否大于 0）不为空返回 true，`[ -s $file ]`
 
 - `-e file` 检测文件（包括目录）是否存在，如果是返回 true，`[ -e $file ]`
+
+## shell echo 命令
+
+**显示变量**
+
+```bash
+#!/bin/sh
+
+read name
+echo "$name It is a test"
+```
+
+`read`命令从标准输入中读取一行，并把输入行的每个字段的值指定给 shell 变量
+
+**显示结果定向至文件**
+
+```bash
+echo "It is a test" > myfile
+```
+
+**原样输出字符串，不进行转译(用单引号)**
+
+```bash
+echo 'hello\"'
+
+# hello\"
+```
