@@ -95,3 +95,125 @@ fi
 ## for 循环
 
 与其他编程语言类似，shell 支持 for 循环
+
+for 循环一般格式为
+
+```bash
+for var in item1 item2 ... timeN
+do
+  command1
+  command2
+  ...
+  commandN
+done
+```
+
+写成一行
+
+```bash
+for var in item1 itme2 ... itmeN; do command1; command2; done;
+```
+
+变量获取列表中的当前值，for 循环执行一次所有命令，命令可以为任何有效的 shell 命令和语句
+
+```bash
+for loop in 1 2 3 4 5
+do
+  echo "The value is: ${loop}"
+done
+
+# The value is: 1
+# ...
+# The value is: 5
+```
+
+## while 语句
+
+while 循环用于不断执行一系列命令，也用于从文件中读取数据
+
+```bash
+while condition
+do
+  command
+done
+```
+
+实例
+
+```bash
+#!/bin/bash
+
+int=1
+
+while (( $int<=5 ))
+do
+  echo $int
+  let "int++"
+done
+```
+
+## until 循环
+
+until 循环执行一系列命令直至条件为 true 时停止
+until 循环与 while 循环在处理方式上刚好相反
+
+```bash
+until condition
+do
+  command
+done
+```
+
+condition 一般为条件表达式，如果返回值为 false，则继续执行循环体内的语句，否则跳出循环
+
+```bash
+a=0
+
+until [ ! $a -lt 10 ]
+do
+  echo $a
+  a=`expr $a + 1`
+done
+```
+
+## shell 函数
+
+linux shell 用户可以定义函数，然后在 shell 脚本中可以随便调用
+
+- 可以直接`fun()`定义，不带任何参数
+
+- 参数返回，可以显式加`return`返回，如果不加，将以最后一条命令运行结果，作为返回值
+
+实例
+
+```
+demoFun() {
+  echo "这是我的第一个shell函数"
+}
+
+echo "-----函数执行开始--------"
+demoFun
+echo "-----函数执行结束--------"
+```
+
+## 函数参数
+
+调用函数时可以向其传递参数，在函数内部，通过`$n`的形式来获取参数的值。`$1`表示第一个参数，
+`$2`为第二个参数...
+
+实例
+
+```bash
+funWithParam() {
+  echo "第一个参数 $1"
+  echo "第一个参数 $2"
+  echo "参数总数有 $# 个"
+  echo "所有参数 $*"
+}
+
+funWithParam 5 89
+# 第一个参数 5
+# 第一个参数 89
+# 参数总数有 2 个
+# 所有参数 5 89
+```
