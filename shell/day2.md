@@ -136,3 +136,10 @@ echo 'hello\"'
 
 # hello\"
 ```
+
+## Linux set 命令
+
+Linux set 命令用于设置 shell，set 指令能设置所有使用 shell 的执行方式，可依照不同的需要
+来设置
+
+`set -e` 若指令传回值不等于 0，则立即退出 shell
