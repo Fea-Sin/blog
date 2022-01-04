@@ -39,3 +39,57 @@ command < file
 ```
 wc -l < users
 ```
+
+**同时替换输入和输出**
+
+```bash
+command < infile > outfile
+```
+
+执行 command，从文件 infile 读取内容，然后写入到 outfile 文件中
+
+## 重定向深入讲解
+
+一般情况下，每个 Unix/Linux 命令运行都会打开三个文件
+
+- 标准输入文件(stdin): stdin 的文件描述符为 0，Unix 程序默认从 stdin 读取数据
+
+- 标准输出文件(stdout): stdout 的文件描述符为 1，Unix 程序默认向 stdout 输出数据
+
+- 标准错误文件(stderr): stderr 的文件秒睡符为 2，Unix 程序会向 stderr 流中写入错误信息
+
+如果希望 stderr 重定向到 file，可以这样写
+
+```bash
+command 2> file
+```
+
+追加到 file
+
+```bash
+command 2>> file
+```
+
+如果希望将 stdout 和 stderr 合并后重定向到 file
+
+```bash
+command > file 2>&1
+
+# or 追加
+command >> file 2>&1
+```
+
+## shell 文件包含
+
+和其他语言一样，shell 也可以包含外部脚本。这样可以很方便的封装一些公用的代码作为一个独立的文件
+
+shell 文件包含的语法格式如下
+
+```bash
+# `.`和文件名中间有一空格
+. filename
+
+# or
+
+source filename
+```
