@@ -15,7 +15,7 @@ mysqladmin -u root -p status
 ```bash
 mysql -u root -p
 
-# cqz123456
+# ******
 ```
 
 MySQL 安装完成之后，将会在其 data 目录下自动创建几个必须的数据库，查看当前存在的数据库
