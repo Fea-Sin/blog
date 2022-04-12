@@ -15,3 +15,5 @@
 - [网络连接的设置](./net-set.md)
 
 - [用 HTTP Proxy module 配置一个反向代理服务器](./reverse-proxy.md)
+
+- [nginx 接口部署映射配置](./config-map.md)
