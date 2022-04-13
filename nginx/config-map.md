@@ -7,3 +7,6 @@ location ~^/app/(.*)$ {
 ```
 
 test.com/app/request/xxxxx => http://192.168.154.102:9999/some_dir/request/xxxxx
+
+> url 请求参数的情况回出现问题
+> 此时需要额外配置
