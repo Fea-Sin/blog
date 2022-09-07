@@ -26,6 +26,8 @@
 
 - [import.meta](./js-part/import-meta.md)
 
+- [位操作～](./js-part/bitwise-not.md)
+
 ## CSS
 
 - [web fonts 一篇就够了](./css/webFonts.md)
