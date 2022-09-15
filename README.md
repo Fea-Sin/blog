@@ -102,6 +102,13 @@
 
 - [优雅的提交你的 Git Commit Message](./project/git-commit.md)
 
+## 计算机
+
+[计算机硬件如何实现乘除法](./compute/multiplication.md)
+
+[计算机如何实现浮点数和运算](https://blog.csdn.net/ppsswhite/article/details/119799396)
+[计算机如何实现浮点数和运算](./compute/floating.md)
+
 ## [Shell](./shell/overview.md)
 
 ## [nginx](./nginx/overview.md)
