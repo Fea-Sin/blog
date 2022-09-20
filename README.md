@@ -28,6 +28,8 @@
 
 - [位操作～](./js-part/bitwise-not.md)
 
+- [Error() constructor](./js-part/error-constructor.md)
+
 ## CSS
 
 - [web fonts 一篇就够了](./css/webFonts.md)
